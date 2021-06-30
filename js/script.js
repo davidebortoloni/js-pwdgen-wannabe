@@ -1,0 +1,13 @@
+var password;
+var userName = prompt('Inserisci il tuo nome');
+var userSurname = prompt('Inserisci il tuo cognome');
+var userColor = prompt('Inserisci il tuo colore preferito');
+var message = 'Ecco la tua incredibile password: ';
+console.log(userName);
+console.log(userSurname);
+console.log(userColor);
+password = userName + userSurname + userColor + '21';
+passwordId = document.getElementById('password');
+messageId = document.getElementById('message');
+messageId.innerText = message;
+passwordId.innerText = password;
